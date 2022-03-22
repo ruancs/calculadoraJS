@@ -55,7 +55,8 @@ body{
 
 .keypad{
     background-color: var(--darkblue-keypad);
-    margin-top: 20px;
+    margin-top: 20px;    
+    padding: 23px;
     border-radius: 10px;
     width: 600px;
     height: 500px;
@@ -63,35 +64,66 @@ body{
 
 
 button {
+    font-family: 'Spartan', sans-serif;
+    font-weight: 800;
     padding: 17px 40px;
     border-radius: 10px;
+    width: auto;
     border: 0;
     align-items: center;
     text-align: center;
-    width: 30px;
-    background-color: rgb(255, 56, 86);
+    background-color: hsl(30, 25%, 89%);
     letter-spacing: 1.5px;
-    font-size: 25px;
+    font-size: 30px;
     transition: all .3s ease;
-    box-shadow: rgb(201, 46, 70) 0px 10px 0px 0px;
-    color: hsl(0, 0%, 100%);
+    box-shadow: hsl(28, 16%, 65%) 0px 4px 0px 0px;
+    color: hsl(221, 14%, 31%);
    }
    
    button:hover {
-    box-shadow: rgb(201, 46, 70) 0px 7px 0px 0px;
+    box-shadow: hsl(28, 16%, 65%) 0px 4px 0px 0px;
    }
    
    button:active {
-    background-color: rgb(255, 56, 86);
+    background-color: hsl(29, 9%, 47%);
     /*50, 168, 80*/
-    box-shadow: rgb(201, 46, 70) 0px 0px 0px 0px;
+    box-shadow: hsl(28, 16%, 65%) 0px 0px 0px 0px;
     transform: translateY(5px);
     transition: 200ms;
    }
 
 
 .keyboard{
-    display: grid;
+    display: grid;    
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 10px;
+    grid-gap: 20px;
+}
+    
+.keyboard2{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+    grid-gap: 22px;
+}
+
+#delete, #reset{
+    font-size: 20px;
+    font-weight: 800 !important;
+    background-color: hsl(225, 21%, 49%);
+    box-shadow: hsl(224, 28%, 35%) 0px 4px 0px 0px;
+    color: white;  
+}
+
+#delete:active, #reset:active {
+        background-color: hsl(224, 28%, 35%);
+}
+
+#igual{
+    background-color: hsl(6, 63%, 50%);
+    color: white;
+    box-shadow: hsl(6, 70%, 34%) 0px 4px 0px 0px;
+}
+
+#igual:active{
+    background-color: hsl(6, 70%, 34%);
 }
