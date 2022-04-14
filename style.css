@@ -28,7 +28,7 @@ body{
 
 .title{
     display: flex;
-    color: white;
+    color: white; 
     justify-content: left;
     width: 600px;
     margin-bottom: 30px;
