@@ -46,11 +46,16 @@ body{
     align-items: center;
 }
 
-.display-calc{
+#display-calc{
     background-color: var(--darkblue-input);
     border-radius: 10px;    
     width: 600px;
+    padding: 30px;
     height: 100px;
+    color: white;
+    font-size: 50px;
+    font-family: 'League Spartan', sans-serif;
+    text-align: right;
 }
 
 .keypad{
